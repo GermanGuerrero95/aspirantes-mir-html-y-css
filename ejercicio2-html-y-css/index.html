@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h2 class="form__heading">Login</h2>
+      <div class="items">
+        <label> Email</label>
+        <input type="email" />
+        <label>Password</label>
+        <input type="password" />
+        <label for="genero">Género</label>
+        <input list="genero" name="genero" />
+        <datalist id="genero">
+          <option value="Masculino"></option>
+          <option value="Femenino"></option>
+          <option value="Otro"></option>
+        </datalist>
+      </div>
+      <div class="form__checkbox">
+        <input type="checkbox" />
+        <label>Acepto los términos</label>
+      </div>
+      <button class="items__button" type="submit">Ingresar</button>
+    </form>
+  </body>
 </html>

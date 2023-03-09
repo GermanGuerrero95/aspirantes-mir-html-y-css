@@ -1,0 +1,81 @@
+
+/*Custom properties*/
+:root{
+    
+    --blanco: #fff;
+    --gris: #b5a7a7;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+
+
+/*Form*/
+
+
+
+.form{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 30rem ;
+    border-radius: 2rem;
+    background: linear-gradient(#521616,#4ab6a9 );
+    color: var(--blanco);
+    box-shadow: 2rem 2rem 1rem var(--gris);
+   
+}
+
+.form__heading{
+    font-size: 2.5rem;
+}
+
+
+.items{
+   display: inline-block;
+}
+
+.items input{
+    padding: 7px;
+    width: 100%;
+}
+
+/*Checkbox*/
+
+.form__checkbox{
+    position: relative;
+    top: .8rem;
+}
+
+/*Button*/
+
+.form button{
+    padding: .5rem 1.5rem;
+    position: relative;
+    left: 18rem;
+    top: 1rem;
+}
+
+
+/*Responsive*/
+
+@media (min-width:499px ){ 
+    .form{
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px){ 
+    .form{
+        width: 30rem;
+    }
+}
+
+
